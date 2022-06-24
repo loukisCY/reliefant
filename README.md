@@ -8,6 +8,7 @@ Tools used:
 * [PHP](https://www.php.net/)
 * [MySQL](https://www.mysql.com/)
 * [AJAX](https://www.w3schools.com/js/js_ajax_intro.asp)
+* [Python](https://www.python.org/)
 
 ![image](https://user-images.githubusercontent.com/94012292/175524063-61eeb3fc-4f68-4fa3-987f-2e803ebeba33.png)
 
