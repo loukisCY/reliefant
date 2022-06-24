@@ -1,2 +1,0 @@
-DROP DATABASE IF EXISTS reliefant;
-CREATE DATABASE reliefant;
