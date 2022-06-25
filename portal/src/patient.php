@@ -5,35 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <link href="css/patient_styles.css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <title>Document</title>
 </head>
-
-<style>
-.vert-line {
-    height: 60px;
-    width: 5px;
-    background-color: white;
-    border-radius: 99px;
-    margin: 15px 20px 20px;
-}
-
-mark.blue {
-    color: #3482fc;
-    background: none;
-}
-</style>
 
 <body>
     <?php
@@ -61,6 +42,9 @@ if ($result->num_rows > 0)
 {
     $row = mysqli_fetch_assoc($result);
     $avg_pain = $row['pain_amount'];
+}
+else{
+    $avg_pain = 'N/A';
 }
 
 // Free result set

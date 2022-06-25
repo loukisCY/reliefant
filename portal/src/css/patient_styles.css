@@ -1,0 +1,12 @@
+.vert-line {
+    height: 60px;
+    width: 5px;
+    background-color: white;
+    border-radius: 99px;
+    margin: 15px 20px 20px;
+}
+
+mark.blue {
+    color: #3482fc;
+    background: none;
+}
