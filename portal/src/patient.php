@@ -95,6 +95,17 @@ else
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Table for each day with meds and avg pain (each row is one day..?)</h1>
+            </div>
+            <div class="col">
+                <h1>Charts with avg mg intake and avg pain </h1>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 
