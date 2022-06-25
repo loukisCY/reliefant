@@ -52,17 +52,9 @@ $result->close();
 $conn->next_result();
 ?>
 
-    <!-- <nav class='navbar sticky-top navbar-dark bg-dark'
-        style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
-        <a class='btn btn-primary btn-md' href='dashboard.php' role='button' style="float-right">To Dashboard</a>
-        <a class='btn btn-secondary btn-md' href='logout.php' role='button'>Logout</a>
-    </nav> -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
         style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
         <div class="container-fluid">
-            <!-- <div class="navbar-brand">
-                <?php echo "<h3>" . $_SESSION['patient_first_name'] . " " .  $_SESSION['patient_last_name'] . "</h3>";?>
-            </div> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
