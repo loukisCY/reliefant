@@ -10,7 +10,7 @@ def send_mail():
         subject = 'Reliefant Password Reset'
 
         rec_email = sys.argv[1]
-        message_text = "This is your reset code: " + sys.argv[2] + "\n\nValid for 1 hour\n\nDO NOT SHARE"
+        message_text = "This is your reset code: " + sys.argv[2][0:3] + "-" + sys.argv[2][3:] + "\n\nValid for 1 hour\n\nDO NOT SHARE"
 
         message = 'Subject: {}\n\n{}'.format(subject, message_text)
 

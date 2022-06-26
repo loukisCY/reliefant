@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
 
     if ( !empty($result->num_rows) && $result->num_rows > 0){
         $row = $result->fetch_assoc();
-        echo $row['email'] . " | " . $row['code'];
+        // echo $row['email'] . " | " . $row['code'];
         $command = 'python python/send_mail.py ' . $row['email'] . " " . $row['code'];
         $output = shell_exec($command);
         header("location:reset_password.php");

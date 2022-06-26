@@ -83,7 +83,8 @@ IF EXISTS(
 	SELECT * FROM Doctors D WHERE D.email = doc_email
     )
 THEN
-	INSERT INTO ForgotPassword(email, code, issued_at) VALUES (doc_email, MD5(RAND()), NOW());
+	DELETE FROM ForgotPassword WHERE email = doc_email;
+	INSERT INTO ForgotPassword(email, code, issued_at) VALUES (doc_email, FLOOR(RAND() * 999999) + 100000, NOW());
     SELECT email, code FROM ForgotPassword F_P WHERE F_P.email = doc_email;
 END IF;
 END
@@ -105,22 +106,4 @@ THEN
 END IF;
 END
 $$
-	  
--- call GenerateForgotPasswordCode('loukis500@gmail.com')
--- call GenerateForgotPasswordCode('marios@gmail.com')
-
--- call ResetPassword('loukis500@gmail.com', 'axladi', 'd58def437d34d13e492805b9c580b699')
-
--- select * from ForgotPAssword
-
--- select * from doctors
-
--- select * from Pain
--- call getpain(39, 10)
--- use reliefant;
--- call GetTotalMedicationWithPain (39)
-
--- select * from pain
-
-call averagepain(39)
 
