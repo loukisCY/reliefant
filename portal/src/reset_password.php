@@ -8,7 +8,8 @@ if(isset($_SESSION['logged_in'])){
 
 if(isset($_POST['submit'])){
     $email = $_POST['email'];
-    $code = $_POST['code'];
+    // $code = $_POST['code'];
+    $code = str_replace("-","",$_POST['code']);
     $new_pass = $_POST['password'];
 
     mysqli_query($conn ,"SET @p0='".$email."'");

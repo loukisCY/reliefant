@@ -8,7 +8,7 @@ INSERT INTO Doctors(national_id, first_name, last_name, email, password)
 VALUES(1013125, 'Mixalis', 'Mixail', 'mike@gmail.com', PASSWORD('123'));
 
 INSERT INTO Doctors(national_id, first_name, last_name, email, password) 
-VALUES(1013121, 'Antreas', 'Andreaou', 'andys@gmail.com', PASSWORD('123'));
+VALUES(1013177, 'Antreas', 'Andreaou2', 'perdis007@gmail.com', PASSWORD('123'));
 
 INSERT INTO Doctors(national_id, first_name, last_name, email, password) 
 VALUES(8013121, 'MMM', 'AAA', 'loukis500@gmail.com', PASSWORD('123'));
