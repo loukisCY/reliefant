@@ -111,7 +111,7 @@ $sql = "CALL GetPatients (@p0)";
 $result = $conn->query($sql);
 if ($result->num_rows > 0)
 {
-    echo "<div style='overflow-y:auto; height: 550px; border:0.5px solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>";
+    echo "<div style='overflow-y:auto; height: 80vh; border:0.5px solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>";
     echo "<table>";
     echo "<tr>";
     echo "<th>ID</th> <th>Firstname</th> <th>Lastname</th> <th>Preview</th>";
@@ -136,7 +136,8 @@ $conn->next_result();
 ?>
             </div>
             <div class="col-sm">
-                <div id="patient_preview">
+                <br>
+                <div id="patient_preview" style="height: 80vh">
                     <h4><br><br>Person info will be listed here.</h4>
                 </div>
             </div>
